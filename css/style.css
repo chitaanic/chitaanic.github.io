@@ -1,0 +1,46 @@
+
+hr{
+  background-color:red;
+  border-style: none;
+  height:1px
+}
+
+body {
+  background-color: grey;
+}
+
+img {
+  width:200px
+}
+
+h1 {
+   color:#57a99a;
+}
+
+h2 {
+  color:#57a99a;
+  text transform: uppercase;
+}
+
+h3 {
+  color:#57a99a;
+}
+
+.professional{
+  background-color: darkgreen;
+}
+
+.personal{
+  background-color: maroon;
+}
+
+
+.redruler{
+  background-color:red;
+  border: 1px;
+}
+
+.dottedborder{
+  border-style: dotted;
+  border-color:black;
+}
