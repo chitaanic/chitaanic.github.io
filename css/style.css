@@ -6,7 +6,7 @@ hr{
 }
 
 body {
-  background-color: grey;
+  background-color: blue;
 }
 
 img {
@@ -14,16 +14,16 @@ img {
 }
 
 h1 {
-   color:#57a99a;
+   color:black;
 }
 
 h2 {
-  color:#57a99a;
+  color:red;
   text transform: uppercase;
 }
 
 h3 {
-  color:#57a99a;
+  color:red;
 }
 
 .professional{
