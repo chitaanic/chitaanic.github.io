@@ -2,24 +2,191 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title> Need Help? </title>
-
+    <title> Contact Page </title>
   </head>
 
-  <body>
+
+  <style>
+
+  #myContainer {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    background: yellow;
+  }
+
+  #myAnimation {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background: red;
+  }
+
+  </style>
+
+
+  <h4> Entry Form <h4>
+  <h2>"Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn" - "In his house at R'lyeh, dead Cthulhu waits dreaming."</h2>
+  <h3> The CULT needs you! </h3>
+
+ <body style="background-color:Green">
+
+   <p>
+<button onclick="myMove()">Click Me</button>
+</p>
+
+<div id ="myContainer">
+    <div id ="myAnimation">Stonks</div>
+    </div>
+
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+
+</canvas>
+
+
+
+ <input type="color">
+
 <br>
 <br>
+
   <form>
-        TO: <input type="text" name="toemail">
+
+    <p id="textblock"></p>
+
       <br>
-      FROM: <input type="text" name="fromemail">
+      Cities:
+      <br>
+      <select>
+        <option value="0"> select </option>
+        <option value="1"> Cornwall </option>
+        <option value="2"> Ottawa </option>
+        <option value="3"> Montreal </option>
+        <option value="4"> Vancouver </option>
+      </select>
+      <br>
+      <br>
+      <input type="date">
+      <br>
       <br>
 
-     Message: <textarea name="message" rows="10" cold="30">
-       </textarea>
+      What are you?
+      <br>
+      <input type="radio" name="text" value="Despair" > Despair
+      <br>
+      <input type="radio" name="text" value="Suffering" > Suffering
+      <br>
+      <input type="radio" name="text" value="Death" > Death
+      <br>
+      <br>
+
+      Will you join?
+      <br>
+      <input type="radio" name="text1" value="Yes" > Yes
+      <br>
+      <input type="radio" name="text1" value="No" > No
+      <br>
+      <br>
+
+      Join as?
+      <br>
+      <input type="radio" name="text2" value="option" > Black Brotherhood
+      <br>
+      <input type="radio" name="text2" value="option" > Brotherhood of the Beast
+      <br>
+      <input type="radio" name="text2" value="option" > Brotherhood of the Black Pharoah
+      <br>
+      <input type="radio" name="text2" value="option" > Brothehood of the Yellow Sign
+      <br>
+      <input type="radio" name="text2" value="option" > Chesuncook Witch Coven
+      <br>
+      <input type="radio" name="text2" value="option" > Chorazus Cult
+      <br>
+      <input type="radio" name="text2" value="option" > Church of Starry Kingdom
+      <br>
+      <input type="radio" name="text2" value="option" > Cult of the Bloody Tongue
+      <br>
+      <input type="radio" name="text2" value="option" > Esoteric Order of Dragon
+      <br>
+      <br>
+
+      Skillset:
+      <br>
+      <input type="checkbox" name="skill1" value="1"> C++
+      <br>
+      <input type="checkbox" name="skill2" value="2"> Javascript
+      <br>
+      <input type="checkbox" name="skill3" value="3"> HTML
+      <br>
+      <input type="checkbox" name="skill4" value="4"> css
+      <br>
+      <br>
+
+      <label>
+      Username:
+      </label>
+
+      <br>
+      <input type="text" name ="username" size="20" maxlength="100">
+      <br>
+
+      <label>
+      Password:
+      </label>
+
+      <br>
+      <input type="password" name="password" size="20" maxlength="20">
+      <br>
+
+      TO:
+      <br>
+      <input type="text" name="toemail">
+      <br>
+
+      FROM:
+      <br>
+      <input type="text" name="fromemail">
+      <br>
+
+      Message:
+      <br>
+      <textarea name="message" rows="25" cols="50">
+      </textarea>
+
       <br>
      <input type="submit" value="submit">
   </form>
 
   </body>
 </html>
+
+<script>
+document.title = "Sean";
+document.getElementById("textblock").innerHTML = Date();
+
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.moveTo(0, 0);
+ctx.lineTo(200, 100);
+ctx.stroke();
+
+</script>
+
+<script>
+
+function myMove() {
+  var elem = document.getElementById("myAnimation");
+  var pos = 0;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (pos == 350) {
+      clearInterval(id);
+    } else {
+      pos++;
+      elem.style.top = pos + 'px';
+      elem.style.left = pos + 'px';
+    }
+  }
+}
+
+</script>
